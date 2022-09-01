@@ -10,6 +10,6 @@ function getBMIMeaning(weight, height) {
     calculateBMI(weight, height) <= 24.9
   )
     return "Normal weight";
-  else if (calculateBMI(weight, height) > 25) return "Overweight";
+  else if (calculateBMI(weight, height) >= 25) return "Overweight";
 }
 module.exports = getBMIMeaning;
